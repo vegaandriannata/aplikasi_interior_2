@@ -1,0 +1,27 @@
+<!-- fragment_dashboard.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<include layout="@layout/toolbar"/>
+    <ListView
+        android:id="@+id/listViewCartProducts"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/editTextAddress" />
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Alamat"
+        android:inputType="textPostalAddress"
+        android:layout_above="@+id/cartbar"
+        android:layout_marginTop="20dp"/>
+
+
+    <include layout="@layout/cart_bar" />
+
+</RelativeLayout>

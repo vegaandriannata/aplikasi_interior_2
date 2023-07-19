@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FAQActivity">
+
+
+    <TextView
+        android:id="@+id/faq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:text="FAQ (Frequently Asked Questions)"
+        android:textSize="20dp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:layout_below="@+id/faq">
+
+    <LinearLayout
+        android:id="@+id/faq1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Apa itu aplikasi pemesanan interior dan furnitur?"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:text="Aplikasi pemesanan interior dan furnitur adalah platform digital yang memungkinkan pengguna untuk memesan produk interior dan furnitur secara online. Melalui aplikasi ini, pengguna dapat menjelajahi katalog produk, membuat pemesanan, dan mengatur pengiriman ke lokasi yang diinginkan."/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/faq2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/faq1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Bagaimana cara menggunakan aplikasi ini?"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:text="Untuk menggunakan aplikasi ini, Anda perlu mengunduhnya dari toko aplikasi resmi, menginstalnya di perangkat mobile Anda, dan membuat akun pengguna. Setelah itu, Anda dapat menjelajahi katalog produk, memilih item yang Anda inginkan, menyesuaikan spesifikasi, dan menambahkannya ke keranjang belanja. Setelah selesai, Anda dapat melakukan pembayaran dan mengatur pengiriman.."/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/faq2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Apakah aplikasi ini menyediakan layanan pengiriman?"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:text="Ya, aplikasi ini menyediakan layanan pengiriman produk. Setelah Anda melakukan pembayaran, Anda dapat memilih opsi pengiriman yang tersedia, seperti pengiriman reguler, pengiriman kilat, atau pengambilan langsung di toko. Biaya pengiriman dan estimasi waktu pengiriman akan ditampilkan sebelum Anda melakukan pembayaran."/>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/buybar"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity=""
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn2"
+            android:onClick="decreaseQuantity"
+            android:text="-"
+            android:textColor="@color/colorYellow"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvQuantity"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_2"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/colorGrey"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn2"
+            android:onClick="increaseQuantity"
+            android:text="+"
+            android:textColor="@color/colorYellow"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/buy_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn1"
+            android:onClick="increaseQuantity"
+            android:layout_marginStart="40dp"
+            android:text="Pesan Sekarang"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+</RelativeLayout>

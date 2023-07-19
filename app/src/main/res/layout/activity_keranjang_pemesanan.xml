@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ListView
+        android:id="@+id/listViewCartProducts"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/textViewTotalHarga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Harga"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:layout_below="@id/listViewCartProducts" />
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Alamat"
+        android:inputType="textPostalAddress"
+        android:layout_above="@+id/confirm_bar"
+        android:layout_marginTop="20dp"/>
+
+
+<include layout="@layout/confirm_bar"/>
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PengantaranActivity">
+
+    <!-- Add your layout components for PengantaranActivity here -->
+    <TextView
+        android:id="@+id/titlee"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="LAYANAN PENGATARAN"/>
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+       android:layout_below="@id/titlee"
+        android:src="@drawable/ic_baseline_local_shipping_24"/>
+
+    <LinearLayout
+        android:id="@+id/layanankami"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gambar"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:text="Layanan Kami"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:text="Kami bantu mengatar barang anda ke rumah atau kantor.
+             Kami tidak harnya mengatarnya sampai depan pintu. Kmaui dapat membantu meletakkan
+ di ruangan yang anda inginkan atau membantu pemasangan," />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/carapemesanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layanankami"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:text="Cara Memesan"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:text="Lakukan pemesanan menggunakan Aplikasi" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carapemesanan"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:text="Biaya Pengantaran"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:text="Sungailiat dan sekitarnya : Rp65.000\nLuar Sunggiliat dan sekitarnya : Rp85.000" />
+    </LinearLayout>
+</RelativeLayout>
