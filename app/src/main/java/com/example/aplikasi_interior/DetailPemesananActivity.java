@@ -17,6 +17,7 @@ public class DetailPemesananActivity extends AppCompatActivity {
     private TextView tvOrderDate;
     private TextView tvTotalOrder;
     private TextView tvAlamat;
+    private TextView tvStatus;
     private TextView tvIdFurnitur;
     private TextView tvQty;
     private TextView tvHarga;
@@ -41,6 +42,7 @@ public class DetailPemesananActivity extends AppCompatActivity {
         tvOrderDate = findViewById(R.id.tv_order_date);
         tvTotalOrder = findViewById(R.id.tv_total_order);
         tvAlamat = findViewById(R.id.tv_alamat);
+        tvStatus = findViewById(R.id.tv_status);
         tvIdFurnitur = findViewById(R.id.tv_id_furnitur);
         tvQty = findViewById(R.id.tv_qty);
         tvHarga = findViewById(R.id.tv_harga);
@@ -55,6 +57,7 @@ public class DetailPemesananActivity extends AppCompatActivity {
             tvOrderDate.setText("Tanggal Order: " + pesanan.getOrder_date());
             tvTotalOrder.setText("Total Order: Rp" + decimalFormat.format(pesanan.getTotal_order()));
             tvAlamat.setText("Alamat: " + pesanan.getAlamat());
+            tvStatus.setText("Status: " + pesanan.getStatus());
 
             // Retrieve the list of items from the selected pesanan
             List<Item> items = pesanan.getItems();

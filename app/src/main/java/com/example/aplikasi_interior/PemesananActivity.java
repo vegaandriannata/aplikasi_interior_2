@@ -12,10 +12,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 
+import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
 import android.widget.ImageView;
 import java.text.DecimalFormat;
+import java.util.Locale;
 
 public class PemesananActivity extends AppCompatActivity {
     private RecyclerView selectedProductsRecyclerView;
@@ -97,7 +99,10 @@ public class PemesananActivity extends AppCompatActivity {
     }
 
     private String formatPrice(double price) {
-        DecimalFormat formatter = new DecimalFormat("#,###");
+        DecimalFormat formatter = (DecimalFormat) NumberFormat.getInstance(Locale.US);
+        formatter.applyPattern("#,###");
         return "Rp" + formatter.format(price);
+
     }
+
 }

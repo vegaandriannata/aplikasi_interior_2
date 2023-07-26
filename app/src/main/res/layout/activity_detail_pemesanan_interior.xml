@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorGrey"
     android:orientation="vertical">
     <include layout="@layout/toolbar"/>
 
@@ -9,13 +10,16 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:text="Detail Pesanan Interior"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
         android:padding="16dp"
         android:textSize="20dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp"
+        android:background="@drawable/bg_btn1"
+        android:padding="30dp"
         android:orientation="vertical">
 
         <TextView
@@ -36,7 +40,15 @@
             android:text="User ID"
             android:textSize="18sp"
             android:textStyle="bold" />
-
+        <TextView
+            android:id="@+id/tv_id_int"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_status"
+            android:layout_marginBottom="10dp"
+            android:text="ID interior"
+            android:textSize="18sp"
+            android:textStyle="bold" />
         <TextView
             android:id="@+id/tv_order_date"
             android:layout_width="wrap_content"
@@ -47,15 +59,7 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/tv_total_order"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv_order_date"
-            android:layout_marginBottom="10dp"
-            android:text="Total Order"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+
 
         <TextView
             android:id="@+id/tv_alamat"
@@ -66,25 +70,9 @@
             android:text="Alamat"
             android:textSize="18sp"
             android:textStyle="bold" />
-        <TextView
-            android:id="@+id/tv_status"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv_alamat"
-            android:layout_marginBottom="10dp"
-            android:text="Status"
-            android:textSize="18sp"
-            android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/tv_id_int"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv_status"
-            android:layout_marginBottom="10dp"
-            android:text="ID interior"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+
+
         <TextView
             android:id="@+id/tv_catatan"
             android:layout_width="wrap_content"
@@ -104,5 +92,23 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
+        <TextView
+            android:id="@+id/tv_total_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_order_date"
+            android:layout_marginBottom="10dp"
+            android:text="Total Order"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_alamat"
+            android:layout_marginBottom="10dp"
+            android:text="Status"
+            android:textSize="18sp"
+            android:textStyle="bold" />
     </LinearLayout>
 </LinearLayout>

@@ -4,11 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TokoActivity">
-
+<include layout="@layout/toolbar"/>
     <TextView
         android:id="@+id/toko"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
         android:gravity="center_horizontal"
         android:layout_margin="20dp"
         android:textSize="20dp"

@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
 import androidx.appcompat.app.AppCompatActivity;
@@ -69,6 +70,7 @@ import android.widget.TextView;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class PemesananInterior extends AppCompatActivity {
     private ImageView backIcon;
@@ -149,7 +151,9 @@ public class PemesananInterior extends AppCompatActivity {
     }
 
     private String formatPrice(double price) {
-        DecimalFormat formatter = new DecimalFormat("#,###");
+        DecimalFormat formatter = (DecimalFormat) NumberFormat.getInstance(Locale.US);
+        formatter.applyPattern("#,###");
         return "Rp" + formatter.format(price);
+
     }
 }
